@@ -6,13 +6,31 @@
 .banner-welcome__text-prefix {
   @include text($kaus, 5.1429rem, 400, inherit, none);
   margin-bottom: 30px;
-
+  @media #{$mx990}{
+    font-size: 4rem;
+  }
+  @media #{$mx760}{
+    font-size: 3rem;
+  }
+  @media #{$mx560}{
+    font-size: 2rem;
+  }
 }
 
 .banner-welcome__text-main {
   @include text($mont, 10.7143rem, 700, inherit, uppercase); 
   margin-bottom: 86px;
-  line-height: 10rem;
+  line-height: 0.93;
+  @media #{$mx990}{
+    font-size: 8rem;
+  }
+  @media #{$mx760}{
+    font-size: 6rem;
+  }
+  @media #{$mx560}{
+    font-size: 4rem;
+  }
+
 }
 
 .banner-welcome__link{

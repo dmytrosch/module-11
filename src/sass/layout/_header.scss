@@ -9,6 +9,15 @@
     padding-top: $gutter;
     height: 100%;
     padding-bottom: 230px;
+    @media #{$mx990}{
+        padding-bottom: 200px;
+      }
+      @media #{$mx760}{
+        padding-bottom: 160px;
+      }
+      @media #{$mx560}{
+        padding-bottom: 120px;
+      }
 }
 
 .header__wrapper{
