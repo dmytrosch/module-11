@@ -6,7 +6,15 @@
 @import '../components/team-card';
 
 
-.main{
-    padding-top: 42px;
-    padding-bottom: 82px;
+.main {
+  padding-top: 42px;
+  padding-bottom: 82px;
+
+  @media #{$mx990} {
+    padding-bottom: 62px;
+  }
+
+  @media #{$mx760} {
+    padding-bottom: 52px;
+  }
 }

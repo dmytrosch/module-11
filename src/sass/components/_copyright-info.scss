@@ -4,4 +4,8 @@
         display: inline;
         color: $primary;
     }
+    @media #{$mx760} {
+        justify-self: center;
+        order: 2;
+      }
 }

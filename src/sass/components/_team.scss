@@ -10,4 +10,12 @@
 .team__list{
     grid-template-columns: repeat(3, 1fr);
     column-gap: 30px;
+    @media #{$mx990}{
+        column-gap: $gutter;
+    }
+    @media #{$mx760}{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        row-gap: 40px;
+      }
 }

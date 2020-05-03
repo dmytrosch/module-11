@@ -1,24 +1,28 @@
 .site-navigation {
   grid-template-columns: 1fr 1fr;
   margin-bottom: 164px;
-  @media #{$mx990}{
-      grid-template-columns: 1fr;
-      row-gap: $gutter;
-      margin-bottom: 120px;
+
+  @media #{$mx990} {
+    grid-template-columns: 1fr;
+    row-gap: $gutter;
+    margin-bottom: 120px;
   }
-  @media #{$mx760}{
+
+  @media #{$mx760} {
     margin-bottom: 80px;
   }
-  @media #{$mx560}{
+
+  @media #{$mx560} {
     margin-bottom: 60px;
   }
 }
 
 .site-navigation__logo {
   justify-self: start;
-  @media #{$mx990}{
+
+  @media #{$mx990} {
     justify-self: center;
-}
+  }
 }
 
 .site-navigation__menu {
@@ -27,6 +31,7 @@
   justify-content: space-between;
   align-content: flex-end;
   @include text($ff:$mont, $fw:400, $ttr:uppercase);
+
 }
 
 .site-navigation__link {

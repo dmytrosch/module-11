@@ -1,6 +1,12 @@
 .mail-subscribe-block {
   display: flex;
   justify-self: end;
+  @media #{$mx760} {
+    justify-self: center;;
+  }
+  @media #{$mx560} {
+    flex-direction: column;     
+  }
 }
 
 .mail-subscribe-block__email {
@@ -26,6 +32,9 @@
     @include text($mont, 1rem, 700, $header-color, uppercase);
     cursor: pointer;
     transition: $trans;
+    @media #{$mx560} {
+        width: 230px;     
+      }
 
 }
 

@@ -40,8 +40,8 @@
   border: 3px solid #ffffff;
   margin: 0 auto;
   transition: $trans;
-  padding-top: 10px;
-  &k--hover:hover{
+  padding-top: 8px;
+  &--hover:hover{
     color: $primary;
     border: 3px solid $primary;
 }

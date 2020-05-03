@@ -4,7 +4,13 @@
 .footer {
   padding-top: 10px;
   padding-bottom: 10px;
-  border-top: 1px solid #e5e5e5;
   grid-template-columns: repeat(2, 1fr);
+  border-top: 1px solid #e5e5e5;
   align-items: center;
+  @media #{$mx760} {
+    grid-template-columns: 1fr;
+    row-gap: $gutter;
+    padding-top: $gutter;
+    padding-bottom: $gutter;
+  }
 }
