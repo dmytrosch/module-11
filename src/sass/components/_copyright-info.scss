@@ -1,0 +1,7 @@
+.copyright-info{
+    @include text($mont, 1rem, 400, $text-bold, none);
+    &__link{
+        display: inline;
+        color: $primary;
+    }
+}

@@ -1,0 +1,10 @@
+@import '../components/copyright-info';
+@import '../components/mail-subscribe-block';
+
+.footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid #e5e5e5;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}

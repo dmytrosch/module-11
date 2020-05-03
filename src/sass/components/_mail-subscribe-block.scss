@@ -1,0 +1,43 @@
+.mail-subscribe-block {
+  display: flex;
+  justify-self: end;
+}
+
+.mail-subscribe-block__email {
+  width: 230px;
+  height: 40px;
+  @include text($roboto, 1.0714rem, 300, $text-bold);
+  line-height: 1.7143rem;
+  border: 1px solid #e7e7e7;
+  padding-left: 12px;
+  outline: none;
+  transition: $trans;
+  &::placeholder{
+    font-style: italic;
+    color: #cccccc;
+}
+}
+
+.mail-subscribe-block__submit-button{
+    width: 150px;
+    height: 40px;
+    background-color: $secondary;
+    border: none;
+    @include text($mont, 1rem, 700, $header-color, uppercase);
+    cursor: pointer;
+    transition: $trans;
+
+}
+
+.mail-subscribe-block__submit-button--active:focus{
+    outline: none;
+}
+
+.mail-subscribe-block__email--active:focus:invalid{
+    border: 2px solid red;
+    
+}
+
+.mail-subscribe-block__email--active:valid{
+    border: 2px solid green;
+}
