@@ -1,0 +1,10 @@
+.services{
+    margin-bottom: 80px;
+}
+
+.services__list{
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: $gutter;
+    row-gap: 92px;
+}
+

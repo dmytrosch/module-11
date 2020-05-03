@@ -1,0 +1,25 @@
+.team-card{
+    position: relative;
+    width: 380px;
+    &:hover .card-overlay{
+        opacity: 1;
+    }
+}
+
+.team-card__image{
+    margin-bottom: 30px;
+}
+
+.team-card__name{
+    @include text($mont, 1rem, 700, $text-bold, uppercase);
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+.team-card__post{
+    @include text($roboto, 1.0714rem, 300, $text-regular, none);
+    line-height: 1.7143rem;
+    font-style: italic;
+    text-align: center;
+}

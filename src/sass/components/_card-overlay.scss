@@ -1,0 +1,45 @@
+.card-overlay{
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 380px;
+    height: 470px;
+    background: linear-gradient( to top, rgba(252,227,138,.95) 0%, rgba(243,129,129,.95) 100%);
+    box-shadow: 10px 10px $secondary;
+    opacity: 0;
+    cursor: pointer;
+    transition: $trans;
+    align-content: center;
+    justify-content: center;
+}
+
+.card-overlay__socials-list{
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    width: 228px;
+    height: 56px;
+}
+
+.card-overlay__social{
+    width: 56px;
+    height: 56px;
+    cursor: pointer;
+    background-color: $accent;
+    transition: $trans;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    &--hover:hover{
+        background-color: $primary;
+        .card-overlay__social-icon{
+            fill: $header-color;
+        }
+    }
+}
+
+.card-overlay__social-icon{
+    width: 26px;
+    height: 26px;
+    fill: $primary;
+    margin: 0 auto;
+}

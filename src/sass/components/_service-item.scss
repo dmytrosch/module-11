@@ -1,0 +1,20 @@
+.service-item__name{
+    @include text($mont, 1rem, 400, $text-bold, uppercase);
+    margin-bottom: 12px;
+}
+
+.service-item__description{
+    @include text($roboto, 1.0714rem, 400, $text-regular, none);
+    line-height: 1.7143rem;
+
+}
+
+.service-item__icon{
+    float: left;
+    width: 32px;
+    height: 32px;
+    fill: $secondary;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
+}

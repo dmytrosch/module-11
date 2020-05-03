@@ -1,0 +1,21 @@
+.main-section{
+&__title-main{
+    @include text($mont, 2.1429rem, 700, $text-bold, uppercase);
+    margin-bottom: 64px;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    &:after{
+        content: "";
+    display: block;
+    margin: 35px auto 0 auto;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    }
+}
+
+&__title-prefix{
+    @include text($kaus, 1.7143rem, 400, inherit, none)
+}
+
+}
