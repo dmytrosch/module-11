@@ -1,0 +1,7 @@
+@mixin text($ff:inherit, $fsz:inherit, $fw:inherit, $color:inherit, $ttr:none) {
+  font-family: $ff;
+  font-size: $fsz;
+  font-weight: $fw;
+  color: $color;
+  text-transform: $ttr;
+}

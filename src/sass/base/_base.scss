@@ -46,6 +46,16 @@ button{
   border: none;
 }
 
+.container{
+  max-width: 1300px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: 0 auto;
+}
+
+.grid{
+  display: grid;
+}
 
 .visually-hidden {
 	position: absolute !important;

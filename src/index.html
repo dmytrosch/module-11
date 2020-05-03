@@ -4,13 +4,253 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Placeholder title</title>
+    <title>Module-11</title>
     <!-- Сюда будет всталена ссылка на файл стилей -->
     <!-- inject:css -->
     <!-- endinject -->
   </head>
 
   <body>
+    <header class="header__wrapper">
+      <div class="header container">
+          <nav class="site-navigation grid">
+              <h1 class="site-logo site-navigation__logo">
+                  <a href="index.html" class="site-logo__link">MoGo</a>
+              </h1>
+              <ul class="site-navigation__menu grid">
+                  <li class="site-navigation__item"><a href=""
+                          class="site-navigation__link site-navigation__link--hover">About</a></li>
+                  <li class="site-navigation__item"><a href=""
+                          class="site-navigation__link site-navigation__link--hover">Service</a></li>
+                  <li class="site-navigation__item"><a href=""
+                          class="site-navigation__link site-navigation__link--hover">Work</a></li>
+                  <li class="site-navigation__item"><a href=""
+                          class="site-navigation__link site-navigation__link--hover">Blog</a></li>
+                  <li class="site-navigation__item"><a href=""
+                          class="site-navigation__link site-navigation__link--hover">Contact</a></li>
+                  <li class="site-navigation__item">
+                      <a href="" class="site-navigation__link">
+                          <svg class="site-navigation__btn site-navigation__btn--hover">
+                              <use href="images/icons/menu-icons.svg#buy"></use>
+                          </svg>
+                      </a>
+                  </li>
+                  <li class="site-navigation__item">
+                      <a href="" class="site-navigation__link">
+                          <svg class="site-navigation__btn site-navigation__btn--hover">
+                              <use href="images/icons/menu-icons.svg#search"></use>
+                          </svg>
+                      </a>
+                  </li>
+              </ul>
+          </nav>
+          <div class="banner-welcome">
+              <p class="banner-welcome__text-prefix">Creative Template</p>
+              <p class="banner-welcome__text-main">Welcome <br> to MoGo</p>
+              <a href="" class="banner-welcome__link banner-welcome__link--hover">Learn more</a>
+          </div>
+      </div>
+  </header>
+  <!-- <main class="main container">
+      <section class="main-section services">
+          <h2 class="main-section__title-main">
+              <span class="main-section__title-prefix">We work with</span>
+              Amazing services
+          </h2>
+          <ul class="services__list list">
+              <li class="service-item">
+                  <svg class="service-item__icon">
+                      <use href="images/icons/sprite-service.svg#ALARM"></use>
+                  </svg>
+                  <h3 class="service-item__name">Photography</h3>
+                  <p class="service-item__description">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                  </p>
+              </li>
+              <li class="service-item">
+                  <svg class="service-item__icon">
+                      <use href="images/icons/sprite-service.svg#BOOK"></use>
+                  </svg>
+                  <h3 class="service-item__name">Web design</h3>
+                  <p class="service-item__description">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                  </p>
+              </li>
+              <li class="service-item">
+                  <svg class="service-item__icon">
+                      <use href="images/icons/sprite-service.svg#COMPUTER"></use>
+                  </svg>
+                  <h3 class="service-item__name">Creativity</h3>
+                  <p class="service-item__description">
+                      Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                  </p>
+              </li>
+              <li class="service-item">
+                  <svg class="service-item__icon">
+                      <use href="images/icons/sprite-service.svg#HOME"></use>
+                  </svg>
+                  <h3 class="service-item__name">SEO</h3>
+                  <p class="service-item__description">
+                      Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+                  </p>
+              </li>
+              <li class="service-item">
+                  <svg class="service-item__icon">
+                      <use href="images/icons/sprite-service.svg#IMAGE"></use>
+                  </svg>
+                  <h3 class="service-item__name">CSS/HTML</h3>
+                  <p class="service-item__description">
+                      Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.
+                  </p>
+              </li>
+              <li class="service-item">
+                  <svg class="service-item__icon">
+                      <use href="images/icons/sprite-service.svg#LINE_GRAPH"></use>
+                  </svg>
+                  <h3 class="service-item__name">Digital</h3>
+                  <p class="service-item__description">
+                      Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                  </p>
+              </li>
+          </ul>
+      </section>
+      <section class="main-section team">
+          <h2 class="main-section__title-main">
+              <span class="main-section__title-prefix">Who we are</span>
+              Meet our team
+          </h2>
+          <p class="team__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <ul class="team__list list">
+              <li class="team-card">
+                  <div class="team-card__overlay card-overlay">
+                      <ul class="card-overlay__socials-list list">
+                          <li class="card-overlay__social card-overlay__social--hover">
+                              <a href="http://facebook.com" target="_blank" class="card-overlay__social-link">
+                                  <svg class="card-overlay__social-icon">
+                                      <use href="images/icons/sprite-socials.svg#facebook"></use>
+                                  </svg>
+                              </a>
+                          </li>
+                          <li class="card-overlay__social card-overlay__social--hover">
+                              <a href="http://twitter.com" target="_blank" class="card-overlay__social-link">
+                                  <svg class="card-overlay__social-icon">
+                                      <use href="images/icons/sprite-socials.svg#twitter"></use>
+                                  </svg>
+                              </a>
+                          </li>
+                          <li class="card-overlay__social card-overlay__social--hover">
+                              <a href="http://pinterest.com" target="_blank" class="card-overlay__social-link">
+                                  <svg class="card-overlay__social-icon">
+                                      <use href="images/icons/sprite-socials.svg#pinterest"></use>
+                                  </svg>
+                              </a>
+                          </li>
+                          <li class="card-overlay__social card-overlay__social--hover">
+                              <a href="http://instagram.com" target="_blank" class="card-overlay__social-link">
+                                  <svg class="card-overlay__social-icon">
+                                      <use href="images/icons/sprite-socials.svg#twitter"></use>
+                                  </svg>
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+                  <img srcset="images/1st_member.jpg 380w, images/1st_member@2x.jpg 760w" src="images/1st_member.jpg"
+                      sizes="380px" alt="team-card" height="470" class="team-card__image">
+                  <h3 class="team-card__name">Matthew Dix</h3>
+                  <p class="team-card__post">Graphic Design</p>
+              </li>
+              <li class="team-card">
+                  <div class="team-card__overlay card-overlay">
+                      <ul class="card-overlay__socials-list list">
+                          <li class="card-overlay__social card-overlay__social--hover">
+                              <a href="http://facebook.com" target="_blank" class="card-overlay__social-link">
+                                  <svg class="card-overlay__social-icon">
+                                      <use href="images/icons/sprite-socials.svg#facebook"></use>
+                                  </svg>
+                              </a>
+                          </li>
+                          <li class="card-overlay__social card-overlay__social--hover">
+                              <a href="http://twitter.com" target="_blank" class="card-overlay__social-link">
+                                  <svg class="card-overlay__social-icon">
+                                      <use href="images/icons/sprite-socials.svg#twitter"></use>
+                                  </svg>
+                              </a>
+                          </li>
+                          <li class="card-overlay__social card-overlay__social--hover">
+                              <a href="http://pinterest.com" target="_blank" class="card-overlay__social-link">
+                                  <svg class="card-overlay__social-icon">
+                                      <use href="images/icons/sprite-socials.svg#pinterest"></use>
+                                  </svg>
+                              </a>
+                          </li>
+                          <li class="card-overlay__social card-overlay__social--hover">
+                              <a href="http://instagram.com" target="_blank" class="card-overlay__social-link">
+                                  <svg class="card-overlay__social-icon">
+                                      <use href="images/icons/sprite-socials.svg#twitter"></use>
+                                  </svg>
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+                  <img srcset="images/2nd_member.jpg 380w, images/2nd_member@2x.jpg 760w" src="images/2nd_member.jpg"
+                      sizes="380px" alt="team-card" height="470" class="team-card__image">
+                  <h3 class="team-card__name">Christopher Campbell</h3>
+                  <p class="team-card__post">Branding/UX design</p>
+              </li>
+              <li class="team-card">
+                  <div class="team-card__overlay card-overlay">
+                      <ul class="card-overlay__socials-list list">
+                          <li class="card-overlay__social card-overlay__social--hover">
+                              <a href="http://facebook.com" target="_blank" class="card-overlay__social-link">
+                                  <svg class="card-overlay__social-icon">
+                                      <use href="images/icons/sprite-socials.svg#facebook"></use>
+                                  </svg>
+                              </a>
+                          </li>
+                          <li class="card-overlay__social card-overlay__social--hover">
+                              <a href="http://twitter.com" target="_blank" class="card-overlay__social-link">
+                                  <svg class="card-overlay__social-icon">
+                                      <use href="images/icons/sprite-socials.svg#twitter"></use>
+                                  </svg>
+                              </a>
+                          </li>
+                          <li class="card-overlay__social card-overlay__social--hover">
+                              <a href="http://pinterest.com" target="_blank" class="card-overlay__social-link">
+                                  <svg class="card-overlay__social-icon">
+                                      <use href="images/icons/sprite-socials.svg#pinterest"></use>
+                                  </svg>
+                              </a>
+                          </li>
+                          <li class="card-overlay__social card-overlay__social--hover">
+                              <a href="http://instagram.com" target="_blank" class="card-overlay__social-link">
+                                  <svg class="card-overlay__social-icon">
+                                      <use href="images/icons/sprite-socials.svg#twitter"></use>
+                                  </svg>
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+                  <img srcset="images/3rd_member.jpg 380w, images/3rd_member@2x.jpg 760w" src="images/3rd_member.jpg"
+                      sizes="380px" alt="team-card" height="470" class="team-card__image">
+                  <h3 class="team-card__name">Michael Fertig</h3>
+                  <p class="team-card__post">Developer</p>
+              </li>
+          </ul>
+
+  </main>
+  <footer class="footer container">
+      <p class="copyright-info">&#169; 2016 MoGo free PSD template by <a href=""
+              class="copyright-info__link">Laaqiq</a>
+      </p>
+      <form action="" class="mail-subscribe-block">
+          <input type="email" placeholder="Your Email..." class="mail-subscribe-block__email mail-subscribe-block__email--active" required>
+          <button type="submit" class="mail-subscribe-block__submit-button mail-subscribe-block__submit-button--active">Subscribe</button>
+      </form>
+  </footer> -->
     <!-- Сюда будет всталена ссылка на файл скриптов -->
     <!-- inject:js -->
     <!-- endinject -->

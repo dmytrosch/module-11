@@ -1,0 +1,30 @@
+.banner-welcome {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.banner-welcome__text-prefix {
+  @include text($kaus, 5.1429rem, 400, inherit, none);
+  margin-bottom: 30px;
+
+}
+
+.banner-welcome__text-main {
+  @include text($mont, 10.7143rem, 700, inherit, uppercase); 
+  margin-bottom: 86px;
+  line-height: 10rem;
+}
+
+.banner-welcome__link{
+  @include text($mont, 1rem, 700, inherit, uppercase);
+  width: 160px;
+  height: 40px;
+  border: 3px solid #ffffff;
+  margin: 0 auto;
+  transition: $trans;
+  padding-top: 10px;
+  &k--hover:hover{
+    color: $primary;
+    border: 3px solid $primary;
+}
+}
