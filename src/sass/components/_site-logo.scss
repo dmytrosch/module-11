@@ -1,13 +1,18 @@
-.site-logo{
-    font-size: 2.1429rem;
-    font-weight: 700;
-    font-family: $mont;
-    transition: $trans;
-    &:hover{
-        color: $accent;
-        text-shadow: $header-color 0 0 2px;
+.site-logo {
+  font-size: 2.1429rem;
+  font-weight: 700;
+  font-family: $mont;
+  transition: $trans;
+
+  &:hover,
+  &:focus {
+    @media #{$min991} {
+      color: $accent;
+      text-shadow: $header-color 0 0 2px;
     }
-    @media #{$mx760}{
-        font-size: 2.6em;
-    }
+  }
+
+  @media #{$mx760} {
+    font-size: 2.6em;
+  }
 }

@@ -65,7 +65,8 @@
 }
 
 @media #{$mx990}{
-  .card-overlay__social--hover:hover {
+  .card-overlay__social--hover:hover,
+  .card-overlay__social--hover:focus {
     background: none;
 
 

@@ -18,3 +18,8 @@
     padding-bottom: 52px;
   }
 }
+
+*::selection{
+    color: $header-color;
+    background-color: $primary;
+}

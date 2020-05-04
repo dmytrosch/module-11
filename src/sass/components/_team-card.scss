@@ -1,7 +1,8 @@
 .team-card {
   max-width: 380px;
 
-  &:hover .card-overlay {
+  &:hover .card-overlay,
+  &:focus .card-overlay {
     opacity: 1;
   }
 }

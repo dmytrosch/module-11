@@ -41,8 +41,11 @@
   margin: 0 auto;
   transition: $trans;
   padding-top: 8px;
-  &--hover:hover{
+  &--hover:hover,
+  &--hover:focus{
+    @media #{$min991}{
     color: $primary;
     border: 3px solid $primary;
+  }
 }
 }

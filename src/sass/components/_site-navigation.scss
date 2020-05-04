@@ -13,7 +13,8 @@
   }
 
   @media #{$mx560} {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
+    position: relative;
   }
 }
 
@@ -32,16 +33,25 @@
   align-content: flex-end;
   @include text($ff:$mont, $fw:400, $ttr:uppercase);
 
+  @media #{$mx560} {
+    font-size: 1.2em;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+  }
 }
 
 .site-navigation__link {
   padding-bottom: 8px;
   transition: $trans;
+}
 
-  &--hover {
+@media #{$min991} {
+  .site-navigation__link--hover {
     border-bottom: 3px solid transparent;
 
-    &:hover {
+    &:hover,
+    &:focus {
       border-bottom: 3px solid $accent;
       color: $accent;
     }
@@ -51,10 +61,22 @@
 
 .site-navigation__item:nth-child(6) {
   justify-self: center;
+
+  @media #{$mx560} {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
 }
 
 .site-navigation__item:nth-child(7) {
   justify-self: end;
+
+  @media #{$mx560} {
+    position: absolute;
+    top: 10px;
+    right: 60px;
+  }
 }
 
 .site-navigation__btn {
@@ -62,8 +84,11 @@
   width: 18px;
   height: 18px;
   transition: $trans;
+}
+@media #{$min991} {
 
-  &--hover:hover {
+  .site-navigation__btn--hover:hover,
+  .site-navigation__btn--hover:focus {
     fill: $accent;
   }
 }
