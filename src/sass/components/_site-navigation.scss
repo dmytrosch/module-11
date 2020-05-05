@@ -27,15 +27,18 @@
 }
 
 .site-navigation__menu {
-  grid-template-columns: repeat(5, 2fr) repeat(2, 1fr);
-  justify-items: start;
+  grid-auto-flow: column;
   justify-content: space-between;
-  align-content: flex-end;
+  align-content: end;
   @include text($ff:$mont, $fw:400, $ttr:uppercase);
-
+  
+  @media #{$mx760}{
+    font-size: 1.2rem;
+  }
   @media #{$mx560} {
-    font-size: 1.2em;
-    grid-template-columns: 1fr;
+    font-size: 1.4rem;
+    grid-auto-flow: row;
+    row-gap: 10px;
     justify-content: center;
     justify-items: center;
   }
@@ -60,21 +63,19 @@
 }
 
 .site-navigation__item:nth-child(6) {
-  justify-self: center;
+
 
   @media #{$mx560} {
     position: absolute;
-    top: 10px;
+    top: 16px;
     right: 10px;
   }
 }
 
 .site-navigation__item:nth-child(7) {
-  justify-self: end;
-
   @media #{$mx560} {
     position: absolute;
-    top: 10px;
+    top: 16px;
     right: 60px;
   }
 }
